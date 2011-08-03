@@ -85,9 +85,8 @@ def get_boilerplate(path, project_name):
     
     """
     defaults = {}
-    defaults_path = os.path.join(path, '.startproject_defaults')
+    defaults_path = os.path.join(path, '.scaffold_defaults')
     if os.path.isfile(defaults_path):
-        print "=========a", defaults_path 
         defaults_file = open(defaults_path, 'r')
         for line in defaults_file:
             match = re.match(r'\s*(\w+)\s*(.*)$', line)
@@ -95,9 +94,8 @@ def get_boilerplate(path, project_name):
                 var, default = match.groups()
                 defaults[var] = default
     boilerplate = []
-    boilerplate_path = os.path.join(path, '.startproject_boilerplate')
+    boilerplate_path = os.path.join(path, '.scaffold_boilerplate')
     if os.path.isfile(boilerplate_path):
-        print "=========b", boilerplate_path
         boilerplate_file = open(boilerplate_path, 'r')
         for line in boilerplate_file:
             match = re.match(r'\s*(\w+)\s*(.*)$', line)
