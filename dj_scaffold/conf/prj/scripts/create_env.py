@@ -6,7 +6,7 @@ from helper import run
 
 here = os.path.dirname(os.path.abspath(__file__))
 root = os.path.join(here, "../")
-tools_folder = os.path.join(root, "tool/")
+tools_folder = os.path.join(root, "tools/")
 env = os.path.join(root, "env/")
 req_folder = os.path.join(root, "requirements/")
 

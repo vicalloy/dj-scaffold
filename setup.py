@@ -71,7 +71,7 @@ if len(sys.argv) > 1 and sys.argv[1] == 'bdist_wininst':
 
 
 setup(name='dj-scaffold',
-      version='1.0.2a',
+      version='1.0.3a',
       author='vicalloy',
       author_email='zbirder@gmail.com',
       description=('Create a Django project layout based on vicalloy\'s'
