@@ -27,4 +27,4 @@ lbstartapp
 add dj_scaffold to INSTALLED_APPS.
 run commend::
 
-	python manage.py app_name
+	python manage.py lbstartapp app_name
