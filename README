@@ -9,7 +9,7 @@ of a standard Django app layout.
 
 
 dj-scaffold.py
-============
+==============
 
 After installing dj-scaffold, simply run the following command (from within
 the directory in where the new project directory should be created)::
@@ -20,6 +20,25 @@ The script will prompt for values to replace boilerplate variables with. These
 variables allow for both the file contents and path names to be customized to
 this specific project.
 
+directory structure
+-------------------
+
+|+docs/  
+|+env/   #python virtual env, created by scripts/create_env.py
+|~requirements/
+| `-requirements.pip
+|~scripts/    #some scripts for this project
+| |-create_env.py    #initialize python virtual env and install requirements
+| `-env.rc    #start python virtual env. Create $mg as a shortcut for python manger.py. you can use $mg in any folder.
+|~sites/    #django's project files. Added some default settings. default db is sqlite, set up template folder and static folder for project.
+| |+media/    #media folder
+| |+static/    #static folder(css/js...)
+| `+templates/    #templates folder
+|+tools/    
+`~wsgi/  
+  `-dj_scaffold.wsgi
+
+note: project's app put in sites/ folder. sites/you app/
 
 lbstartapp
 ===============================
