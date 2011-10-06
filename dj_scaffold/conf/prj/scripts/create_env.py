@@ -8,7 +8,6 @@ here = os.path.dirname(os.path.abspath(__file__))
 root = os.path.join(here, "../")
 tools_folder = os.path.join(root, "tools/")
 env = os.path.join(root, "env/")
-req_folder = os.path.join(root, "requirements/")
 
 pip = os.path.join(env, "Scripts/pip.exe")
 if os.name == 'posix':
@@ -23,7 +22,7 @@ except:
 
 def do_pip():
     print '== do_pip =='
-    requirements = os.path.join(req_folder, 'requirements.pip')
+    requirements = os.path.join(root, 'requirements.txt')
     run("%s install -r %s" % (pip, requirements))
 
 if __name__ == '__main__':
