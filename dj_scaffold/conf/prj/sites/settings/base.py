@@ -1,6 +1,7 @@
 # Django settings for simple_todo_site project.
 import os
 HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path('HERE', '../')
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -150,8 +151,3 @@ LOGGING = {
         },
     }
 }
-
-try:
-    from localsettings import *
-except:
-    pass

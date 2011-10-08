@@ -32,6 +32,13 @@ directory structure
 |~sites/    #django's project files. Added some default settings. default db is sqlite, set up template folder and static folder for project.
 | |+media/    #media folder
 | |+static/    #static folder(css/js...)
+| |~settings/  #settings files
+| | |-__init__.py
+| | |-base.py  #base settings
+| | |-dev.py   #settings for develop environment
+| | |-local.sample  
+| | |-pre.sample  #you can create pre.py to set which settings file you want to use(default is dev)
+| | `-production.py  ##settings for production environment
 | `+templates/    #templates folder
 |+tools/    
 `~deploy/  
