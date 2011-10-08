@@ -25,8 +25,7 @@ directory structure
 
 |+docs/  
 |+env/   #python virtual env, created by scripts/create_env.py
-|~requirements/
-| `-requirements.pip
+|~requirements.txt
 |~scripts/    #some scripts for this project
 | |-create_env.py    #initialize python virtual env and install requirements
 | `-env.rc    #start python virtual env. Create $mg as a shortcut for python manger.py. you can use $mg in any folder.
@@ -35,7 +34,7 @@ directory structure
 | |+static/    #static folder(css/js...)
 | `+templates/    #templates folder
 |+tools/    
-`~wsgi/  
+`~deploy/  
   `-dj_scaffold.wsgi
 
 note: project's app put in sites/ folder. sites/you app/
