@@ -3,4 +3,4 @@ try:
     from pre import SETTINGS
 except:
     pass
-exec 'from %s import *' % pre.SETTINGS
+exec 'from %s import *' % SETTINGS
