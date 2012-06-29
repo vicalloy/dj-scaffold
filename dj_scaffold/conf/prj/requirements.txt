@@ -3,3 +3,4 @@ south
 dj-scaffold
 django-devserver
 django-debug-toolbar
+django_compressor
