@@ -1,6 +1,17 @@
 import os
+import sys
 import site
-from dj_scaffold.env import add_site_dir
+
+def add_site_dir(site_dirs):
+    prev_sys_path = list(sys.path) 
+    for directory in site_dirs:
+        site.addsitedir(directory)
+    new_sys_path = [] 
+    for item in list(sys.path): 
+        if item not in prev_sys_path: 
+            new_sys_path.append(item) 
+            sys.path.remove(item) 
+    sys.path[:0] = new_sys_path 
 
 HERE = os.path.dirname(__file__)
 ROOT_PATH = os.path.abspath(os.path.join(HERE, '../'))
